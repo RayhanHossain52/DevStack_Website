@@ -4,6 +4,7 @@ import { Suspense} from "react";
 import type { CardType } from "./Type";
 import CardSection from "./components/TechCardSection.tsx/CardSection";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/Footer";
 
 
 const fetchCard = async (): Promise<CardType[]> => {
@@ -24,7 +25,7 @@ function App() {
       <Suspense fallback={<div className=" flex font-semibold text-2xl justify-center">Loading......</div>}>
         <CardSection CardPromise={cardPromise}/>
       </Suspense>
-
+      <Footer/>
     </>
   )
 }
