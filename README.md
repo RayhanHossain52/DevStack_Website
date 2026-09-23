@@ -71,9 +71,7 @@ list efficiently when the data changes.
 Conditional rendering means showing different UI based on a condition.
 
 I used it in `SelectedCard`:
-I used it in `SelectedCard`:
 
-```tsx
 {selectedCards.length === 0 ? (
     <p>No technologies selected yet.</p>
 ) : (
