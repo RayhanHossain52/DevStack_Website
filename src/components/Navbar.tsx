@@ -6,13 +6,13 @@ const Navbar = () => {
         <nav className="sticky top-0 z-50 bg-white">
             <div className="container mx-auto py-5 px-4 flex justify-between items-center">
 
-                {/* Left: Hamburger - Small Devices */}
+
                 <button className="lg:hidden text-2xl">
                     <RxHamburgerMenu />
 
                 </button>
 
-                {/* Center: Brand Logo */}
+
                 <img src={logo} alt="DevStack" className="w-32 lg:w-auto" />
 
                 {/* Navigation Links - Large Devices */}
@@ -24,7 +24,7 @@ const Navbar = () => {
                     <a href="">Contact</a>
                 </div>
 
-                {/* Right: Sign In & Sign Up */}
+
                 <div className="flex">
                     <button className="btn btn-sm lg:btn-md rounded-full bg-transparent border-transparent">
                         Sign In
